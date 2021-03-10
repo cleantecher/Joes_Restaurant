@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles-readonly.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title> Joe's Restaurant</title>
+  <!-- CSS Styling -->
+  <style>
+    /* FOR THIS CHALLENGE, WRITE ALL OF YOUR STYLING WITHIN THIS <style> TAG */
+    /* PART 1 CSS */
+    
+    /*Specifies the color for the font in the header*/
+    header {
+      color:rgb(57,57,57);
+      font-family: Arial;
+    }
+    /*Specifies the background for the nav bar*/
+    nav {
+      background-color:rgb(179,193,176);
+    }
+    /*Specifies the image width*/
+    .parallax {
+      background: url(https://drive.google.com/uc?export=view&id=1Jz937sGmWecge5XywqMkmqPoFqliUu9z) repeat fixed 100% ;
+      text-align: center;
+      background-size:cover;
+      background-position-x: center;
+    }
+
+    .parallax-inner {
+      padding-top: 30%;
+      padding-bottom: 30%;
+    }
+    .parallax_menu {
+      background: url(hero-image_grey.jpg) repeat fixed 100% ;
+      text-align: center;
+      background-size:cover;
+      background-position-x: center;
+    }
+    .parallax-inner-menu {
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+    /*Specifies h1 style*/
+    h1 {
+      font-family: Arial;
+      margin: 10px;
+    }
+    .highlight {
+      color: rgb(232,131,106);
+    }
+
+
+    /* PART 2 CSS*/
+    main {
+      background-color: rgb(179,193,176);
+      text-align: center;
+      font-family: Arial;
+      color:rgb(57,57,57)
+    }
+
+    .menu_img {
+      position: relative;
+      text-align: center;
+      width: 100%;
+      margin: auto;
+      display: block;
+    }
+
+    hr {
+      height: 2px;
+      border-color: rgb(57,57,57);
+    }
+    
+    .title {
+      text-decoration: underline;
+      color: rgb(57,57,57);
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      margin-top: 30px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .dish {
+      font-family: 'Times New Roman';
+      margin-top: 20px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .description{
+      font-family: 'Times New Roman';
+      margin-top: 10px;
+      font-size: 18px;
+      word-wrap: normal;
+    }
+
+    .price {
+      font-size: 18px;
+      font-style: italic;
+    }
+
+  </style>
+  <!-- END OF CSS -->
+</head>
+<body>
+
+  <!-- HTML & CSS: PART 1 -->
+  <header>
+    <!-- 
+      For this <header> element, write the following styling:
+        - font color of rgb(57,57,57)
+     -->
+     <nav>
+    <!--
+      For this <nav> element, write the following styling:
+        - background color of rgb(179,193,176). 
+    -->
+      <h1>Joe's</h1>
+      <ul>
+        <li>Menu</li>
+        <li>Home</li>
+      </ul>
+    </nav>
+    <div id="hero-container">
+      <!-- 
+        In this div above #greeting, we want to display a nice big hero image. 
+        Below this comment, create an image tag and ensure it has the following:
+          - Your image should have a width of 100%. 
+          - The image you should show lives at this url (https://drive.google.com/uc?export=view&id=1Jz937sGmWecge5XywqMkmqPoFqliUu9z).
+      -->
+      <section class="parallax">
+        <div class="parallax-inner">
+          <div id='greeting'>
+            <!-- 
+            Below this comment, create a level-one header displaying the restaurant name. This is the main title of the page and should be above the slogan.
+            Your h1 should have the following styling:
+              - The font style should be Arial.
+              - Should have a margin bottom of 10 pixels.
+            -->
+            <h1>Joe's</h1>
+
+            <!-- 
+            Apply a class name of "highlight" to each <span> tag in the level-five header below.
+            For your class name write the styling to change the color of the font from black to rgb(232,131,106).
+            -->
+            <h5 id="slogan"><span class='highlight'>Always</span> serving <span class='highlight'>fresh</span> ingredients with a smile :)</h5>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 
+    HTML & CSS: PART 2 
+    Follow the instructions / requirements presented in the prep course "Projects" tab > "Restaurant Website & Menu" > "Part 2"
+  -->
+  <main>
+    <section class="parallax_menu">
+      <div class="parallax-inner-menu">
+        <h2>Menu</h2>
+        <hr>
+        <!--The menu for appetizers-->
+        <div class="title">Appetizers</div>
+          <div class="dish">Cranberry Brie Bread</div>
+            <div class="description"> gooey brie topped with sweet cranberries on a crusty loaf of sourdough </div>
+              <div class="price">$18.00</div>
+          <div class="dish">Korean Beef Lettuce Wraps</div>
+            <div class="description"> bulgogi beef wrapped in little lettuce packages with homemade pickled onions and radishes, topped with miso mayo </div>
+              <div class="price">$14.00</div>
+          <div class="dish">Spinach-Stuffed Mushrooms </div>
+            <div class="description"> creamy, garlicky, spinach stuffed mushrooms topped with bubbling parmesan cheese  </div>
+              <div class="price">$12.00</div>
+        <hr>
+        <!--The menu for mains-->
+        <div class="title">Mains</div>
+          <div class="dish">Apple and Onion Pork Chops </div>
+            <div class="description"> hearty fall flavours served with brussels sprouts with toasted hazelnut butter and an in house made french roll  </div>
+              <div class="price">$24.00</div>
+          <div class="dish">Grilled Moroccan Chicken </div>
+            <div class="description"> fragrant chicken cooked with garlic, lemon, and pomegranate molasses served with roasted turmeric cauliflower topped with creamy yogurt </div>
+              <div class="price">$26.00</div>
+          <div class="dish">Grilled Lobster Tails with Coriander </div>
+            <div class="description"> fresh and tender lobster tails seasoned with coriander and topped with warm chilli butter sauce  </div>
+              <div class="price">$32.00 </div>
+          <div class="dish">Dried Tomato Florentine Pasta </div>
+            <div class="description"> spicy pasta cooked in a sun dried tomato cream sauce topped with spinach and mozzarella</div>
+              <div class="price">$22.00</div>
+        <hr>
+        <!--The menu for salads-->
+        <div class="title">Salads</div>
+         <div class="dish">Broccoli and Apple Salad with Chicken</div>
+            <div class="description"> charred broccoli, sweet fuji apples, feta cheese and warm grilled chicken breast served on a bed of mixed greens</div>
+              <div class="price">$18.00</div>
+          <div class="dish">Persimmon, Pomegranate, and Kale Salad </div>
+            <div class="description"> massaged seasoned kale salad served with a delicious tangy citrus dressing </div>
+              <div class="price">$14.00</div>
+          <div class="dish">Peach, Sweet Corn and Halloumi Salad </div>
+            <div class="description">fresh sweet corn and juicy peaches served with salty halloumi cheese on arugula </div>
+              <div class="price">$22.00 </div>
+        <hr>
+        <!--The menu for deserts-->
+        <div class="title">Desserts</div>
+          <div class="dish">Salted Caramel White Chocolate Brownies </div>
+            <div class="description"> decadent gooey white chocolate brownies layered with in house made caramel</div>
+              <div class="price">$12</div>
+          <div class="dish">Cinnamon Sugar Pretzel Bites </div>
+            <div class="description"> warm fried dough covered in cinnamon sugar served with chocolate sauce for dipping </div>
+              <div class="price">$8</div>
+        <hr>
+        <!--The menu for deals-->
+        <div class="title">Deals</div>
+        <ul>
+          <li class="description">monday $3 off vegetarian salads and mains </li>
+          <li class="description">tuesday $2 off bar rail </li>
+          <li class="description">wednesday half-priced appetizers after 9pm </li>
+          <li class="description">thursday $2 off cocktails </li>
+          <li class="description">friday one free dessert with the purchase 2 mains</li>
+        </ul>
+        <hr>
+        <div class="title">We look forward to having you over</div>
+      </div>      
+    </div>
+
+      <!-- Create a restaurant menu here -->
+  </main>
+</body>
+</html>
